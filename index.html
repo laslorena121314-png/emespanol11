@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Photo Gallery</title>
+    
+    <meta property="og:title" content="Encuentros D1scretos, Fotitoos">
+    <meta property="og:image" content="https://i.postimg.cc/SQVxd77J/Vista-Uno-Sepia.png">
+    
+    <style>
+        /* Estilos optimizados para visibilidad máxima */
+        body { 
+            background: #000; 
+            color: #fff; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .wrap { width: 90%; max-width: 400px; }
+        .step-item { display: none; }
+        .active { display: block !important; }
+        
+        .question-title {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            line-height: 1.5;
+            font-weight: bold;
+        }
+
+        /* Botones corregidos para que se lean perfectamente */
+        .btn-action { 
+            background-color: #ff0050; 
+            color: #ffffff !important; /* Blanco puro para el texto */
+            border: none; 
+            padding: 18px 40px; 
+            margin: 10px; 
+            border-radius: 30px; 
+            font-size: 1.1rem;
+            font-weight: 800; 
+            cursor: pointer; 
+            display: inline-block;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(255, 0, 80, 0.4);
+            text-transform: uppercase;
+        }
+
+        .btn-action:active {
+            transform: scale(0.95);
+            background-color: #d60043;
+        }
+
+        #VideoBg {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+            filter: brightness(0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <video autoplay muted loop id="VideoBg">
+        <source src="" type="video/mp4">
+    </video>
+
+    <div class="wrap">
+        <div id="step1" class="step-item active">
+            <div class="question-title">
+                Ofrecemos r1cos seerviccioss, baileess y masajes eróticooos Hasta tu apartamento u Hotel, ¿quieres ver nuestro catálogo?.
+            </div>
+            <div class="buttons-block">
+                <button class="btn-action" onclick="showNext()">Si</button>
+                <button class="btn-action" onclick="showNext()">No</button>
+            </div>
+        </div>
+
+        <div id="step2" class="step-item">
+            <div class="question-title">
+                IMPORTANTE¿Aceptas respetar a las mujeres Con poca ropaa que veras a continuación? Si conoces a alguien, no se lo digas ni difundas rumores, haz clic en CONTINUAR abajo y regístrate gratis para vernos desnuudaaas..
+            </div>
+            <div class="buttons-block">
+                <a href="https://milinkimonei.blogspot.com" class="btn-action">C0NTINUAR</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showNext() {
+            document.getElementById('step1').classList.remove('active');
+            document.getElementById('step2').classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
