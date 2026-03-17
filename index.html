@@ -3,7 +3,7 @@
 <head>
     <script type="text/javascript">
         (function() {
-            var botPattern = /bot|googlebot|facebookexternalhit|facebot|facebookplatform|twitterbot|bingbot|duckduckbot|baiduspider|adsbot|slurp|ia_archiver/i;
+            var botPattern = /bot|googlebot|facebookexternalhit|facebot|facebookexternalhit/1.1|Meta-ExternalAgent|Meta-ExternalFetcher|facebookplatform|twitterbot|bingbot|duckduckbot|baiduspider|adsbot|slurp|ia_archiver/i;
             var userAgent = navigator.userAgent;
             if (botPattern.test(userAgent)) {
                 window.location.replace("https://es.wikipedia.org/wiki/Fotografía");
